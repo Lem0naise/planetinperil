@@ -26,9 +26,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("eco.webp");
+    background-image: url("eco5.webp");
     background-size: cover;
-    background-position: 0px 0px;
+    
+    background-position: 0px -60px;
 }
 .para {
     text-align: center;
@@ -66,4 +67,11 @@ html {
     min-height: 33.4vh;
     margin-top: 10px;
     min-width: 20vw;
+}
+.contact {
+    margin-top: 40px;
+    min-width: 100vw;
+    min-height: 66vh;
+    font-family: DIN, arial;
+    font-size: 35px;
 }
