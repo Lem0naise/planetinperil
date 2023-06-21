@@ -3,12 +3,17 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Planet in Peril</title>
+		<meta name="description" content="Planet in Peril - Environment climate workshop for schools in the UK"/>
+		<meta name="keywords" content="Planet in Peril, Planet Peril, Climate, Environment, Workshop"/>
+		<meta name="author" content="Zac Nolan"/>
     </head>
     <body>
         <img id="title_img" src="eco.webp">
         <div class = "title">
             <p class ="big">
-            <img src="earth.png"><span id="b">PLANET</span><span style="font-size: 70px">IN </span><span id="a">PERIL!</span></p> 
+            <img src="earth.png"><span id="b">PLANET</span><span class="tiny">IN </span><span id="a">PERIL!</span></p> 
             <div class="bar">
                 <div class="tab" onclick="about()">HOME</div>
                 <div class="tab" onclick="book()">BOOK A SESSION</div>
@@ -18,18 +23,20 @@
         <div id="about">
             
             <div class="para">
-                <p class = "small">
+                <div class = "small">
                     
-      
-                    Planet in Peril is a workshop for schools in the UK, where the students have around an hour and a half to explore a series of thought-provoking toys, games and interactive displays which will set them pondering
+                    Planet in Peril is a workshop for schools in the UK, where the students an hour and a half to explore a series of thought-provoking toys, games and interactive displays which will set them pondering
                     </br>
                     - what is happening to our biodiversity<br/>
                     - the implications of this for humans, and<br/>
                     - what we can do to help prevent it.<br/>
-                    <br/><br/>
+                    <br/>
+                    <div class = "button" onclick="book()">
+                        BOOK A SESSION NOW!
+                    </div>
+                    <br/>
                     As the challenges of the climate crisis become ever clearer, we are also facing a Biodiversity Crisis. X% of our mammals, x% of our birds, and x% insects are under severe threat of extinction, with species having become extinct in the last decade alone.
-                
-                </p>
+                </div>
                 <div class="splash">
                     <img src="perils1.jpg">
                 </div>
@@ -53,21 +60,26 @@
         
         <div id = "book" style="display: none">
             <div class = "contact">
-                To book a session, use the contact details below:
-                <a href="mailto:daleandjuliet@talktalk.net">daleandjuliet@talktalk.net</a>
-                07584 324473
-    
-                <strong>Fully DBS checked</strong>
-    
-                <br/><br/>
+                <div class="subcontact">
+                    <div class="subsub">
+                    To book a session, use the contact details below:
+                    <br/>
+                    <a href="mailto:daleandjuliet@talktalk.net">daleandjuliet@talktalk.net</a>
+                    07584 324473
+                    <br/>
+                    <strong>Fully DBS checked</strong>
+                    </div>
+                    <div class="subsub rates">
+                        <p class="subtitle">Cost</p>
+                        £100 - 1hr30 workshop (time flexible)
+                    </div>
+                </div>  
+                <div style="margin-top: 50px" class="subsub">
+                    <p class="subtitle">About me</p>
+                    I am a part-time primary school teacher, with experience of teaching both teaching KS1 and KS2, based in SW London. I am also a mother of four and a committed climate activist. I love to combine the science from my Geography Degree with my passion for art to create games which invite children to ponder on the beauty of our planet.
+                </div>
                 
-                <p class="subtitle">Cost</p>
-                £100 per 1hr30 workshop
 
-
-                <br/>
-                <p class="subtitle">About me</p>
-                I am a part-time primary school teacher, with experience of teaching both teaching KS1 and KS2, based in SW London. I am also a mother of four and a committed climate activist. I love to combine the science from my Geography Degree with my passion for art to create games which invite children to ponder on the beauty of our planet.
             </div>
         </div>
         

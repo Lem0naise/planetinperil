@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 @font-face {
     font-family: 'DIN';
@@ -75,7 +76,7 @@ html {
 .para {
     display:flex;
     text-align: left;
-    font-family: arial;
+    font-family: 'Ubuntu';
     font-size: 30px;
     color: var(--text);
     min-height: 50vh;
@@ -111,15 +112,27 @@ html {
     text-align: left;
     font-family: arial;
     color: var(--text);
-    min-height: 66vh;
+
     width: 90vw;
     font-size: 35px;
     left: 4vw;
     position: relative;
-
     padding-top: 50px;
 }
+.subsub {
+    background-color: rgba(190, 190, 220, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.rates {
+    margin-left: 20px;
+}
+.subcontact {
+    display: flex;
+    flex-direction: row;
+}
 .subtitle {
+    margin: 0;
     font-size: 55px;
     font-weight: bold;
 }
@@ -131,7 +144,64 @@ html {
 }
 #title_img {
     position: fixed;
-    opacity: 0.2;
+    opacity: 0.4;
     min-width: 100vw;
     min-height: 100vh;
 }
+.button {
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+    background-color:aliceblue;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tiny {
+    font-size: 70px
+}
+
+@media only screen and (max-width: 1200px) {
+    .big {
+        font-size: 100px;
+    }
+    .tiny {
+        font-size: 45px;
+    }   
+
+    .para {
+        flex-direction: column;
+    }
+    .para {
+        align-items: center;
+    }
+    .splash {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        min-height: 30vh;
+    }
+    .title img {
+        height: 120px;
+        margin-right: 15px;
+    }
+    .big {
+        font-size: 10vw;
+    }
+    .tiny {
+        font-size: 5vw;
+    }
+    .subcontact {
+        flex-direction: column;
+    }
+    .rates {
+        margin-left : 0px;
+        margin-top: 20px;
+    }
+}
+    
+    
