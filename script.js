@@ -9,11 +9,11 @@ function book(){
     document.getElementById("about").style.display = "none";
     document.getElementById("gallery").style.display = "none";
     document.getElementById("book").style.display = "block";
-    document.getElementById("title_img").src = "perils2.jpg"
+    document.getElementById("title_img").src = "perils2.webp"
 }
 function gallery(){
     document.getElementById("book").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("gallery").style.display = "block";
-    document.getElementById("title_img").src = "eco5.webp"
+    document.getElementById("title_img").src = "eco.webp"
 }
