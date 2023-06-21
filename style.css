@@ -93,9 +93,7 @@ html {
     object-fit: cover;
     object-position: 0 0;
 }
-.small {
-    margin: 0;
-}
+
 
 .gallery {
    display: flex;
@@ -123,6 +121,11 @@ html {
     background-color: rgba(190, 190, 220, 0.7);
     padding: 20px;
     border-radius: 10px;
+}
+.small {
+    margin: 0;
+    margin-right: 20px;
+
 }
 .rates {
     margin-left: 20px;
