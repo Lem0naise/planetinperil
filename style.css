@@ -48,6 +48,25 @@ html {
     align-items: center;
     flex: auto;
 }
+.titlebar {
+    font-family: "Lilita One", arial;
+    position: relative;
+    font-size: 70px;
+    min-height: 10vh;
+    display: flex;
+    color:#e8e6e3;
+    width: 100vw;
+    margin-top: 50px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    opacity: 1;
+
+
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    background-color: #2c2c2c;
+}
 .tab {
     cursor: pointer;
     padding-right: 40px;
@@ -139,6 +158,9 @@ html {
     font-size: 55px;
     font-weight: bold;
 }
+#book {
+    min-height: 100vh;
+}
 #book img{
     position: absolute;
     opacity: 0.2;
@@ -176,7 +198,9 @@ html {
     .tiny {
         font-size: 45px;
     }   
-
+    .contact {
+        font-size: 25px;
+    }
     .para {
         flex-direction: column;
     }
@@ -189,6 +213,12 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
+    .titlebar {
+        width: 100vw;
+        border-radius: 20px;
+        left: -20px;
+        font-size: 40px;
+    }
     .title {
         min-height: 30vh;
     }
