@@ -212,7 +212,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .titlebar {
         width: 100vw;
         border-radius: 20px;
