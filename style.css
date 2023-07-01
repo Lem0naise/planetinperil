@@ -50,7 +50,9 @@ html {
 }
 .titlebar {
     font-family: "Lilita One", arial;
-    position: relative;
+    z-index: 899;
+    position: sticky;  
+    top: 0;
     font-size: 70px;
     min-height: 10vh;
     display: flex;
