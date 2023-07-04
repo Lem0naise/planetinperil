@@ -26,7 +26,7 @@ html {
     font-family: 'Cabin Sketch', arial;
     font-size: 30px;
     color: #e8e6e3;
-    position: sticky;
+    position: relative;
     top: 0;
     min-width: 100vw;
     display: flex;
