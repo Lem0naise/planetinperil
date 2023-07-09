@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
 
 @font-face {
     font-family: 'DIN';
@@ -12,6 +10,7 @@
 	--background: #e8e6e3;
 	--text: #2c2c2c;
     --green: #2b663c;
+    --light-green: #317745;
 }
 body {
     margin:0;
@@ -48,7 +47,7 @@ html {
     text-align: center;
 }
 .titlebar {
-    font-family: "Lilita One", arial;
+    
     z-index: 899;
     position: sticky;  
     top: 0;
@@ -62,31 +61,79 @@ html {
     justify-content: left;
     align-items: center;
     background-color: var(--green);
-    min-height: calc(100px + 5vh);
+    height: calc(100px + 5vh);
 }
 .titlebar p{
-    font-family: "Cabin Sketch";
+    font-family: "Cabin Sketch", arial;
     margin: 0;
     margin-left: 50px;
     font-size: 80px;
+}
+#price {
+    position: sticky;
+    top: calc(140px + 5vh);
+    margin-top: 40px;
+    width: 30vw;
+    padding: 20px;
+    border-radius: 30px;
+    float: right;
+    background-color: var(--green);
+    color: var(--background);
+    font-family: "Fira Sans", arial;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+#price div:nth-of-type(1){
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#price .t{
+    margin: 0;
+    font-family: "Cabin Sketch", arial;
+    font-size: 40px;
+}
+#price a {
+    text-decoration: none;
+    font-style:italic;
+    font-weight:bold;
+}
+#price button {
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: auto;
+    font-size: 25px;
+    background-color: var(--light-green);
+    color: var(--background);
+    box-shadow: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+#price button:hover {
+    opacity: 0.5;
 }
 #about {
     min-height: 80vh;
 }
 #items {
+    position: relative;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     max-width: 50vw;
     margin-left: calc(5vw + 30px);
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', arial;
     gap: 100px;
 }
 .item {
     min-height: 50px;
 }
 .item .t {
-    font-family: "Cabin Sketch";
+    font-family: "Cabin Sketch", arial;
     font-size: 70px;
     margin: 20px;
     margin-left: 0;
@@ -120,7 +167,7 @@ html {
 .para {
     display:flex;
     text-align: left;
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', arial;
     font-size: 30px;
     color: var(--text);
     min-height: 50vh;
@@ -135,7 +182,7 @@ html {
 }
 .splash img {
     width: 50vw;
-    max-height: 50vh;
+    max-height: 70vh;
     overflow: hidden;
     object-fit: cover;
     object-position: 0 0;
@@ -155,21 +202,23 @@ html {
     display:flex;
     flex-direction: column;
     text-align: left;
-    font-family: 'Fira Sans';
-    color: var(--text);
-
-    width: 90vw;
+    font-family: 'Fira Sans', arial;
+    color: var(--background);
+    background-color: var(--text);
+    width: fit-content;
     font-size: 35px;
-    left: 4vw;
+    padding-left: 4vw;
     position: relative;
-    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 0;
 }
 .subsub {
     padding: 20px;
     font-size: 20px;
 }
 .subdivider_p {
-    font-family: "Cabin Sketch";
+    font-family: "Cabin Sketch", arial;
     font-size: 80px;
 }
 .small {
@@ -187,7 +236,7 @@ html {
     margin: 0;
     font-size: 55px;
     font-weight: bold;
-    font-family: "Cabin Sketch";
+    font-family: "Cabin Sketch", arial;
 }
 #book {
     min-height: 100vh;
@@ -251,6 +300,7 @@ html {
 }
 
 @media only screen and (max-width: 900px) {
+
     .subdivider_p {
         font-size: 60px;
     }
@@ -286,12 +336,37 @@ html {
     .subtitle {
         font-size: 40px;
     }
+
+    .item {
+        width: 80vw;
+    }
+    .item .t {
+        font-size: 50px;
+    }
+    .titlebar p{
+        font-size: 60px;
+    }
+    #items {
+        margin-top: 400px;
+    }
+    #price {
+        position: relative;
+        top: 10px;
+        width: 60vw;
+        padding: 20px;
+        border-radius: 30px;
+        margin-left: 50px;
+        float: left;
+    }
+
+}
+    
+    
+@media only screen and (max-width: 700px) {
     .titlebar p:nth-of-type(2){
         display: none;
     }
 }
-    
-    
 
 @media only screen and (max-width: 500px) {
 
@@ -314,5 +389,17 @@ html {
     }
     .subsub {
         font-size: 15px;
+    }
+    .item .p {
+        font-size: 15px;
+    }
+    .item .t {
+        font-size: 40px;
+    }
+    #items {
+        gap: 20px;
+    }
+    .titlebar p{
+        font-size: 50px;
     }
 }
