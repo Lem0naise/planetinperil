@@ -136,17 +136,21 @@ html {
     display: flex;
     flex-direction: column;
 }
-
 .item .t {
     margin: 0;
     margin-right: 10px;
     font-family: "Cabin Sketch", arial;
     font-size: 70px;
     justify-content: center;
+
 }
 .tit {
     display: flex;
     align-items: center;
+    transition: opacity .5s;
+}
+.tit:hover {
+    opacity: .3;
 }
 .tit img {
     height: 100px;
