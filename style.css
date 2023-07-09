@@ -133,13 +133,23 @@ html {
 .item {
     min-height: 50px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
+
 .item .t {
+    margin: 0;
+    margin-right: 10px;
     font-family: "Cabin Sketch", arial;
     font-size: 70px;
-    margin: 20px;
-    margin-left: 0;
-
+    justify-content: center;
+}
+.tit {
+    display: flex;
+    align-items: center;
+}
+.tit img {
+    height: 100px;
 }
 .item .p {
     margin: 0;
@@ -375,6 +385,7 @@ html {
         margin-top: 500px;
     }
     #price {
+        z-index: 9;
         position: relative;
         top: 10px;
         width: 60vw;
