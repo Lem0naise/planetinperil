@@ -178,9 +178,12 @@ html {
     padding-top: 50px;
 }
 .splash {
-    margin-top: 30px;
+    margin-right: 15px;
+    margin-top: 30px;  
 }
 .splash img {
+    border-radius: 15px;
+    border: solid black 5px;
     width: 50vw;
     max-height: 70vh;
     overflow: hidden;
@@ -347,7 +350,7 @@ html {
         font-size: 60px;
     }
     #items {
-        margin-top: 400px;
+        margin-top: 500px;
     }
     #price {
         position: relative;
@@ -365,6 +368,22 @@ html {
 @media only screen and (max-width: 700px) {
     .titlebar p:nth-of-type(2){
         display: none;
+    }
+    .titlebar {
+        max-height: 70px;
+    }
+    #items {
+        margin-top: 500px;
+    }
+    #price {
+        position: relative;
+        top: 10px;
+        width: 80vw;
+        padding: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 30px;
+        margin-left: 0;
     }
 }
 
