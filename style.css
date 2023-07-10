@@ -244,6 +244,7 @@ html {
 .subdivider_p {
     font-family: "Cabin Sketch", arial;
     font-size: 80px;
+    text-align: left;
 }
 .small {
     margin: 0;
