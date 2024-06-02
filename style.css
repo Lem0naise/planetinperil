@@ -100,7 +100,7 @@ html {
 #price a {
     text-decoration: none;
     font-style:italic;
-    font-weight:bold;
+
 }
 #price button {
     border-radius: 15px;
@@ -415,7 +415,7 @@ html {
         max-height: 70px;
     }
     #items {
-        margin-top: 500px;
+        margin-top: 350px;
     }
     #price {
         position: relative;
